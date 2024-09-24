@@ -25,8 +25,35 @@ if "edad" in informacion_personal:
     del informacion_personal["edad"]
     print("Clave 'edad' eliminada.")
 
+
 # Imprimir el diccionario final
 print("\nDiccionario final:")
 print(informacion_personal)
 
 
+#Nuevo programa
+
+
+# Crear un diccionario con información sobre un libro
+informacion_libro = {
+    "titulo": "Cien años de soledad",
+    "autor": "Gabriel García Márquez",
+    "anio_publicacion": 1967,
+    "genero": "Novela"
+}
+
+# Acceder y modificar el valor de "genero"
+print(f"Género original: {informacion_libro['genero']}")
+informacion_libro["genero"] = "Realismo mágico"
+print(f"Género modificado: {informacion_libro['genero']}")
+
+# Agregar una nueva clave-valor para el "editorial"
+informacion_libro["editorial"] = "Editorial Sudamericana"
+print(f"Editorial agregada: {informacion_libro['editorial']}")
+
+# Verificar existencia de la clave "isbn"
+if "isbn" not in informacion_libro:
+    informacion_libro["isbn"] = "978-3-16-148410-0"
+    print(f"Número ISBN agregado: {informacion_libro['isbn']}")
+
+# Eliminar la clave
